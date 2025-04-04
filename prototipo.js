@@ -30,7 +30,7 @@ function converterParaMorse(texto, sentido) {
 
     if (sentido === 1) { 
         // Morse → Texto
-        return textoSemAcento.split(' ').map(morse => morseParaTexto[morse] || morse).join(''); 
+        return textoSemAcento.split(' ').map(morse => morseParaTexto[morse] || morse).join(' '); 
     }
 }
 
